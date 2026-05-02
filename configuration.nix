@@ -51,6 +51,9 @@
   # Configure console keymap
   console.keyMap = "de";
 
+  services.displayManager.cosmic-greeter.enable = true;
+  services.desktopManager.cosmic.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.andreas = {
     isNormalUser = true;
