@@ -32,6 +32,7 @@
       # Define a user account. Don't forget to set a password with ‘passwd’.
       users.users.andreas = {
         isNormalUser = true;
+        initialPassword = "12345";
         description = "Andreas Henneberger";
         extraGroups = [
           "networkmanager"

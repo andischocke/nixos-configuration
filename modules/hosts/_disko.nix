@@ -101,4 +101,9 @@
       ];
     };
   };
+
+  fileSystems = {
+    "/nix".neededForBoot = true;
+    "/persistent".neededForBoot = true;
+  };
 }
