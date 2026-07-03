@@ -1,6 +1,5 @@
 {
   disko.devices = {
-    # Disk devices
     disk = {
       nvme = {
         device = "/dev/disk/by-id/nvme-KINGSTON_RBUSNS8154P3512GJ_50026B76826F6223";
@@ -44,7 +43,10 @@
               content = {
                 type = "btrfs";
                 extraArgs = [
+                  "-m raid1"
+                  "-d single"
                   "-f"
+                  "ata-CT500MX500SSD1_1902E1E2A55A-part1"
                 ];
 
                 subvolumes = {
@@ -67,6 +69,21 @@
                   };
                 };
               };
+            };
+          };
+        };
+      };
+
+      sata = {
+        device = "ata-CT500MX500SSD1_1902E1E2A55A";
+        type = "disk";
+
+        content = {
+          type = "gpt";
+          partitions = {
+            root = {
+              name = "root";
+              size = "100%";
             };
           };
         };
