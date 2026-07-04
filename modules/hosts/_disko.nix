@@ -1,6 +1,21 @@
 {
   disko.devices = {
     disk = {
+      sata = {
+        device = "ata-CT500MX500SSD1_1902E1E2A55A";
+        type = "disk";
+
+        content = {
+          type = "gpt";
+          partitions = {
+            root = {
+              name = "root";
+              size = "100%";
+            };
+          };
+        };
+      };
+
       nvme = {
         device = "/dev/disk/by-id/nvme-KINGSTON_RBUSNS8154P3512GJ_50026B76826F6223";
         type = "disk";
@@ -69,21 +84,6 @@
                   };
                 };
               };
-            };
-          };
-        };
-      };
-
-      sata = {
-        device = "ata-CT500MX500SSD1_1902E1E2A55A";
-        type = "disk";
-
-        content = {
-          type = "gpt";
-          partitions = {
-            root = {
-              name = "root";
-              size = "100%";
             };
           };
         };
