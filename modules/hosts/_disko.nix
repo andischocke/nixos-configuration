@@ -46,7 +46,7 @@
                   "-m raid1"
                   "-d single"
                   "-f"
-                  "ata-CT500MX500SSD1_1902E1E2A55A-part1"
+                  "/dev/disk/by-id/ata-CT500MX500SSD1_1902E1E2A55A-part1"
                 ];
 
                 subvolumes = {
