@@ -7,7 +7,7 @@
       mountOptions = [
         "defaults"
         "mode=755"
-        "size=25%"
+        "size=1G"
       ];
     };
 
