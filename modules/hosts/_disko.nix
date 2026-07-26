@@ -1,21 +1,18 @@
 {
   disko.devices = {
+    # Ephemeral root
+    nodev.root = {
+      fsType = "tmpfs";
+      mountpoint = "/";
+      mountOptions = [
+        "defaults"
+        "mode=755"
+        "size=1G"
+      ];
+    };
+
+    # Persistent root
     disk = {
-      sata = {
-        device = "ata-CT500MX500SSD1_1902E1E2A55A";
-        type = "disk";
-
-        content = {
-          type = "gpt";
-          partitions = {
-            root = {
-              name = "root";
-              size = "100%";
-            };
-          };
-        };
-      };
-
       nvme = {
         device = "/dev/disk/by-id/nvme-KINGSTON_RBUSNS8154P3512GJ_50026B76826F6223";
         type = "disk";
@@ -28,7 +25,6 @@
               name = "ESP";
               size = "1G";
               type = "EF00";
-
               content = {
                 type = "filesystem";
                 format = "vfat";
@@ -43,7 +39,6 @@
             swap = {
               name = "swap";
               size = "16G";
-
               content = {
                 type = "swap";
                 resumeDevice = true;
@@ -88,17 +83,20 @@
           };
         };
       };
-    };
-
-    # Ephemeral root
-    nodev.root = {
-      fsType = "tmpfs";
-      mountpoint = "/";
-      mountOptions = [
-        "defaults"
-        "mode=755"
-        "size=25%"
-      ];
+      
+      sata = {
+        device = "/dev/disk/by-id/ata-CT500MX500SSD1_1902E1E2A55A";
+        type = "disk";
+        content = {
+          type = "gpt";
+          partitions = {
+            root = {
+              name = "root";
+              size = "100%";
+            };
+          };
+        };
+      };
     };
   };
 

@@ -21,8 +21,15 @@
 
       users.andreas = {
         directories = [
-          ".ssh"
-          ".mozilla"
+          "Desktop"
+          "Documents"
+          "Downloads"
+          "Music"
+          "Pictures"
+          "Projects"
+          "Public"
+          "Templates"
+          "Videos"
         ];
         files = [
         ];
