@@ -1,5 +1,16 @@
 {
   disko.devices = {
+    # Ephemeral root
+    nodev.root = {
+      fsType = "tmpfs";
+      mountpoint = "/";
+      mountOptions = [
+        "defaults"
+        "mode=755"
+        "size=25%"
+      ];
+    };
+
     # Persistent root
     disk = {
       nvme = {
@@ -87,7 +98,7 @@
 
                 subvolumes = {
                   games = {
-                    #mountpoint = "/games";
+                    mountpoint = "/mnt/games";
                     mountOptions = [
                       "compress=zstd"
                       "noatime"
@@ -100,16 +111,6 @@
           };
         };
       };
-    };
-    # Ephemeral root
-    nodev.root = {
-      fsType = "tmpfs";
-      mountpoint = "/";
-      mountOptions = [
-        "defaults"
-        "mode=755"
-        "size=25%"
-      ];
     };
   };
 
