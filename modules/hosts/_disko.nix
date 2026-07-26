@@ -20,9 +20,9 @@
         content = {
           type = "gpt";
           partitions = {
-            # Extensible Firmware Interface System Partition
-            esp = {
-              name = "ESP";
+            # Extensible Firmware Interface system partition
+            boot = {
+              name = "boot";
               size = "1G";
               type = "EF00";
               content = {
@@ -34,7 +34,7 @@
                 ];
               };
             };
-
+            
             # Swap partition
             swap = {
               name = "swap";
@@ -49,14 +49,10 @@
             root = {
               name = "root";
               size = "100%";
-
               content = {
                 type = "btrfs";
                 extraArgs = [
-                  "-m raid1"
-                  "-d single"
                   "-f"
-                  "/dev/disk/by-id/ata-CT500MX500SSD1_1902E1E2A55A-part1"
                 ];
 
                 subvolumes = {
@@ -87,12 +83,30 @@
       sata = {
         device = "/dev/disk/by-id/ata-CT500MX500SSD1_1902E1E2A55A";
         type = "disk";
+
         content = {
           type = "gpt";
           partitions = {
-            root = {
-              name = "root";
+            games = {
+              name = "games";
               size = "100%";
+              content = {
+                type = "btrfs";
+                extraArgs = [
+                  "-f"
+                ];
+
+                subvolumes = {
+                  games = {
+                    mountpoint = "/games";
+                    mountOptions = [
+                      "compress=zstd"
+                      "noatime"
+                      "subvol=games"
+                    ];
+                  };
+                };
+              };
             };
           };
         };
