@@ -4,6 +4,7 @@
 
     preserveAt."/persistent" = {
       directories = [
+        "/etc/ssh"
         "/etc/nixos"
         "/var/lib/bluetooth"
         {
