@@ -6,6 +6,7 @@
       directories = [
         "/etc/ssh"
         "/etc/nixos"
+        "/tmp"
         "/var/lib/bluetooth"
         {
           directory = "/var/lib/nixos";
