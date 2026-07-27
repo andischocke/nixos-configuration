@@ -29,15 +29,20 @@
         #"amdgpu"
       ];
 
-      # Define a user account. Don't forget to set a password with ‘passwd’.
-      users.users.andreas = {
-        isNormalUser = true;
-        initialPassword = "12345";
-        description = "Andreas Henneberger";
-        extraGroups = [
-          "networkmanager"
-          "wheel"
-        ];
+      users = {
+        mutableUsers = false;
+        
+        users.andreas = {
+          description = "Andreas Henneberger";
+          hashedPassword = "$y$j9T$O1jkC4bqmVIVy9.2Y947T.$EELekbygdNm4s8Yyyzv9MgrTQlwqqrtSBnSkWGAK1X2";
+          isNormalUser = true;
+          
+          extraGroups = [
+            "networkmanager"
+            "wheel"
+            ];
+          ;
+        };
       };
 
       # Allow unfree packages
