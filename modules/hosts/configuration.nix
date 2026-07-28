@@ -78,5 +78,20 @@
       # Before changing this value read the documentation for this option
       # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
       system.stateVersion = "25.11"; # Did you read the comment?
+      
+      nixpkgs.overlays = [
+        (self: super: {
+          libdisplay-info = super.libdisplay-info.overrideAttrs {
+            version = "0.3.0";
+            src = super.fetchFromGitLab {
+              domain = "gitlab.freedesktop.org";
+              owner = "emersion";
+              repo = "libdisplay-info";
+              rev = "0.3.0";
+              sha256 = "sha256-nXf2KGovNKvcchlHlzKBkAOeySMJXgxMpbi5z9gLrdc=";
+            };
+          };
+        })
+      ];
     };
 }
