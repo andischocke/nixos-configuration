@@ -19,14 +19,7 @@
         }
       ];
 
-      files = [
-        {
-          #file = "/etc/machine-id";
-          #configureParent = true;
-          #how = "symlink";
-          #inInitrd = true;
-        }
-      ];
+
 
       users.andreas = {
         directories = [
