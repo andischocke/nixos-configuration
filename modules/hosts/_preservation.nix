@@ -22,9 +22,9 @@
       files = [
         {
           file = "/etc/machine-id";
-          inInitrd = true;
-          how = "symlink";
           configureParent = true;
+          how = "symlink";
+          inInitrd = true;
         }
       ];
 
