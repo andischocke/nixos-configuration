@@ -5,14 +5,14 @@
     preserveAt."/persistent" = {
       directories = [
         "/etc/ssh"
-        "/etc/nixos"
+        "/var/lib/bluetooth"
+        "/var/lib/systemd/timers"
+        "/var/log"
+
         {
           directory = "/tmp";
           mode = "1777";
         }
-
-        "/var/lib/bluetooth"
-        
         {
           directory = "/var/lib/nixos";
           inInitrd = true;
@@ -23,6 +23,8 @@
         {
           file = "/etc/machine-id";
           inInitrd = true;
+          how = "symlink";
+          configureParent = true;
         }
       ];
 
