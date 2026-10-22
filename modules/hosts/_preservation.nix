@@ -21,10 +21,10 @@
 
       files = [
         {
-          file = "/etc/machine-id";
-          configureParent = true;
-          how = "symlink";
-          inInitrd = true;
+          #file = "/etc/machine-id";
+          #configureParent = true;
+          #how = "symlink";
+          #inInitrd = true;
         }
       ];
 
