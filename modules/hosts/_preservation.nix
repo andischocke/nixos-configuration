@@ -6,8 +6,13 @@
       directories = [
         "/etc/ssh"
         "/etc/nixos"
-        "/tmp"
+        {
+          directory = "/tmp";
+          mode = "1777";
+        }
+
         "/var/lib/bluetooth"
+        
         {
           directory = "/var/lib/nixos";
           inInitrd = true;
