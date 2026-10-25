@@ -1,6 +1,6 @@
 {
   flake.nixosModules.configuration = {
-    programs.dms-shell = {
+    programs.dux-shell = {
       enable = true;
 
       systemd = {
