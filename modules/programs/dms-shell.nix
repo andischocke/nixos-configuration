@@ -9,7 +9,7 @@
       };
     };
 
-    programs.dsearch = {
+    programs.dux-search = {
       enable = true;
 
       systemd = {
