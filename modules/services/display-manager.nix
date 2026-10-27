@@ -6,10 +6,6 @@
       compositor = {
         name = "niri";
       };
-      logs = {
-        path = "/var/log/dux-greeter.log";
-        save = true;
-      };
     };
   };
 }
