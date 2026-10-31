@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.configuration = {
+  flake.nixosModules.dux = {
     programs.dux-shell = {
       enable = true;
 
