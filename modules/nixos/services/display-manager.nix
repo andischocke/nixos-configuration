@@ -1,10 +1,14 @@
 {
   flake.nixosModules.configuration = {
-    services.displayManager.dux-greeter = {
+    services.displayManager = {
       enable = true;
+      logToJournal = true;
 
-      compositor = {
-        name = "niri";
+      noctalia-greeter = {
+        enable = true;
+        settings = {
+          
+        };
       };
     };
   };
