@@ -1,11 +1,5 @@
 {
-  flake.homeModules.niri =
-    {
-      pkgs,
-      ...
-    }:
-
-    {
+  flake.homeModules.niri = {
       wayland.windowManager.niri = {
         enable = true;
       };
