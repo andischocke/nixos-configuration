@@ -19,7 +19,7 @@
         LC_NUMERIC = "en_IE.UTF-8";
         LC_PAPER = "en_IE.UTF-8";
         LC_TELEPHONE = "en_IE.UTF-8";
-        LC_TIME = "en_IE.UTF-8";
+        LC_TIME = "en_DK.UTF-8";
       };
     };
   };
