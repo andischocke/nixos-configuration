@@ -9,7 +9,12 @@
       enable = true;
 
       extraPackages = with pkgs.bat-extras; [
-        core
+        batdiff
+        batgrep
+        batman
+        batpipe
+        batwatch
+        prettybat
       ];
     };
   };
