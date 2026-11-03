@@ -6,7 +6,7 @@
     }:
 
     {
-      programs.vscode = {
+      programs.niri = {
         enable = true;
       };
     };
