@@ -47,19 +47,6 @@
       # Allow unfree packages
       nixpkgs.config.allowUnfree = true;
 
-      # List packages installed in system profile. To search, run:
-      # $ nix search wget
-      environment.systemPackages = with pkgs; [
-        alacritty
-        cups-pk-helper
-        fuzzel
-        github-desktop
-        mcp-nixos
-        nixd
-        nixfmt
-        tree
-      ];
-
       # List services that you want to enable:
 
       # Enable the OpenSSH daemon.
