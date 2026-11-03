@@ -6,7 +6,7 @@
     }:
 
     {
-      programs.niri = {
+      wayland.windowManager.niri = {
         enable = true;
       };
     };
