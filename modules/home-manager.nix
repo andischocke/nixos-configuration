@@ -18,6 +18,7 @@
         users.andreas = {
           imports = [
             self.homeModules.home
+            self.homeModules.niri
             self.homeModules.vscode
           ];
         };
