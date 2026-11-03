@@ -5,9 +5,9 @@
       defaultLocale = "en_IE.UTF-8";
 
       extraLocales = [
-        "de_DE.UTF-8"
-        "en_IE.UTF-8"
-        "en_US.UTF-8"
+        "de_DE.UTF-8/UTF-8"
+        "en_IE.UTF-8/UTF-8"
+        "en_US.UTF-8/UTF-8"
       ];
 
       extraLocaleSettings = {
