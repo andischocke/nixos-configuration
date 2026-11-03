@@ -1,22 +1,22 @@
 {
-  lib,
-  pkgs,
-  ...
-}:
+  flake.nixosModules.configuration =
+    {
+      pkgs,
+      ...
+    }:
 
-{
-  flake.nixosModules.configuration = {
-    programs.bat = {
-      enable = true;
+    {
+      programs.bat = {
+        enable = true;
 
-      extraPackages = with pkgs.bat-extras; [
-        batdiff
-        batgrep
-        batman
-        batpipe
-        batwatch
-        prettybat
-      ];
+        extraPackages = with pkgs.bat-extras; [
+          batdiff
+          batgrep
+          batman
+          batpipe
+          batwatch
+          prettybat
+        ];
+      };
     };
-  };
 }
