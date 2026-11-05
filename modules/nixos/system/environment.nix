@@ -9,7 +9,7 @@
       environment = {
         shellAliases = {
           cat = "bat";
-          ls = "eza --git --group-directories-first --header --long --time-style=long-iso";
+          ls = "eza --git --group-directories-first --header --icons --long --time-style=long-iso";
         };
 
         systemPackages = with pkgs; [
