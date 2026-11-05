@@ -7,6 +7,10 @@
 
     {
       environment = {
+        shellAliases = {
+          cat = "bat";
+        };
+
         systemPackages = with pkgs; [
           alacritty
           cups-pk-helper
