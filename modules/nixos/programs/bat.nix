@@ -24,8 +24,6 @@
           italic-text = "always";
           pager = "less";
           paging = "auto";
-          sanitize = "auto";
-          strip-ansi = "auto";
           style = "full";
           theme = "auto";
           theme-dark = "Catppuccin Mocha";
