@@ -14,6 +14,7 @@
         systemPackages = with pkgs; [
           alacritty
           cups-pk-helper
+          eza
           fuzzel
           github-desktop
           mcp-nixos
