@@ -23,9 +23,6 @@
           cups-pk-helper
           fuzzel
           github-desktop
-          mcp-nixos
-          nixd
-          nixfmt
         ];
       };
     };
