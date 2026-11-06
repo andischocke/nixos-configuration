@@ -13,15 +13,16 @@
         };
 
         systemPackages = with pkgs; [
+          eza
+          ripgrep
+
           alacritty
           cups-pk-helper
-          eza
           fuzzel
           github-desktop
           mcp-nixos
           nixd
           nixfmt
-          tree
         ];
       };
     };
