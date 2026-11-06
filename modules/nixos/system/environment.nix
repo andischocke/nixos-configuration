@@ -9,12 +9,14 @@
       environment = {
         shellAliases = {
           cat = "bat";
-          grep = "rg --hidden --pretty --search-zip --smart-case";
+          find = "fd --hidden --no-ignore";
+          grep = "rg --hidden --no-ignore --pretty --search-zip --smart-case";
           ls = "eza --git --group-directories-first --header --icons --long --time-style=long-iso";
         };
 
         systemPackages = with pkgs; [
           eza
+          fd
           ripgrep
 
           alacritty
