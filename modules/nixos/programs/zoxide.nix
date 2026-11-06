@@ -3,9 +3,9 @@
     programs.zoxide = {
       enable = true;
 
-      flags = {
+      flags = [
         "--cmd cd"
-      };
+      ];
     };
   };
 }
