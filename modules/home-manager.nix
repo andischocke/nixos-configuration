@@ -19,6 +19,7 @@
           imports = [
             self.homeModules.home
             self.homeModules.vscode
+            self.homeModules.zed-editor
           ];
         };
       };
