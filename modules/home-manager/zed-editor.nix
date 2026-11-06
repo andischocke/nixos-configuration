@@ -4,17 +4,7 @@
       enable = true;
 
       extensions = [
-        "csv"
-        "env"
-        "html"
-        "ini"
-        "log"
         "nix"
-        "sql"
-        "typst"
-        "toml"
-        "yara.zed"
-        "xml"
       ];
 
       userSettings = {
