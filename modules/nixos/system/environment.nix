@@ -9,6 +9,7 @@
       environment = {
         shellAliases = {
           cat = "bat";
+          grep = "rg --hidden --pretty --search-zip --smart-case";
           ls = "eza --git --group-directories-first --header --icons --long --time-style=long-iso";
         };
 
