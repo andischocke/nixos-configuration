@@ -18,7 +18,6 @@
       ];
 
       userSettings = {
-        format_on_save = true;
         session = {
           trust_all_worktrees = true;
         };
