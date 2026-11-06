@@ -23,9 +23,9 @@
           trust_all_worktrees = true;
         };
         telemetry = {
-          anthropic_retention = "false";
-          diagnostics = "false";
-          metrics = "false";
+          anthropic_retention = false;
+          diagnostics = false;
+          metrics = false;
         };
       };
     };
