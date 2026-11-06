@@ -15,6 +15,7 @@
         };
 
         systemPackages = with pkgs; [
+          dust
           eza
           fd
           ripgrep
