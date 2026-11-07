@@ -25,6 +25,30 @@
         ];
 
         userSettings = {
+          #General
+          session = {
+            trust_all_worktrees = true;
+          };
+          telemetry = {
+            anthropic_retention = false;
+            diagnostics = false;
+            metrics = false;
+          };
+
+          #Appearance
+          theme = {
+            mode = "system";
+            light = "Catppuccin Latte";
+            dark = "Catppuccin Mocha";
+          };
+          icon_theme = {
+            mode = "system";
+            light = "Catppuccin Latte";
+            dark = "Catppuccin Mocha";
+          };
+          #Languages & Tools
+
+
           languages = {
             Nix = {
               formatter = {
@@ -39,22 +63,6 @@
 
           lsp = {
             nixd = { };
-          };
-
-          session = {
-            trust_all_worktrees = true;
-          };
-
-          telemetry = {
-            anthropic_retention = false;
-            diagnostics = false;
-            metrics = false;
-          };
-
-          theme = {
-            mode = "system";
-            dark = "Catppuccin Mocha";
-            light = "Catppuccin Latte";
           };
         };
       };
