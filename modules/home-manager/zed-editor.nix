@@ -20,6 +20,7 @@
 
         extraPackages = with pkgs; [
           alejandra
+          nil
           nixd
           sqruff
         ];
@@ -49,17 +50,19 @@
           #Languages & Tools
           languages = {
             Nix = {
+              format_on_save = "on";
               formatter = {
                 external = {
                   command = "alejandra";
                   arguments = [ "--quiet" ];
                 };
               };
-              language_servers = [ "nixd" ];
+              language_servers = [ "nil" ];
             };
           };
 
           lsp = {
+            nil = { };
             nixd = { };
           };
         };
