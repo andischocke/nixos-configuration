@@ -11,6 +11,7 @@
 
         extensions = [
           "catppuccin"
+          "catppuccin-icons"
           "csv"
           "log"
           "nix"
