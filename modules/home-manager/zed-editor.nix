@@ -1,22 +1,41 @@
 {
-  flake.homeModules.zed-editor = {
-    programs.zed-editor = {
-      enable = true;
+  flake.homeModules.zed-editor =
+    { pkgs, ... }:
 
-      extensions = [
-        "nix"
-      ];
+    {
+      programs.zed-editor = {
+        enable = true;
 
-      userSettings = {
-        session = {
-          trust_all_worktrees = true;
-        };
-        telemetry = {
-          anthropic_retention = false;
-          diagnostics = false;
-          metrics = false;
+        extensions = [
+          "csv"
+          "log"
+          "nix"
+        ];
+
+        extraPackages = with pkgs; [
+          nixd
+        ];
+
+        userSettings = {
+          languages = {
+            Nix = {
+              language_servers = [ "nixd" ];
+            };
+          };
+
+          lsp = {
+            nixd = { };
+          };
+
+          session = {
+            trust_all_worktrees = true;
+          };
+          telemetry = {
+            anthropic_retention = false;
+            diagnostics = false;
+            metrics = false;
+          };
         };
       };
     };
-  };
 }
