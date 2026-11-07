@@ -15,7 +15,6 @@
           "nix"
           "sql"
           "xml"
-          "zig"
         ];
 
         extraPackages = with pkgs; [
