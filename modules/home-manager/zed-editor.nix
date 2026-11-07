@@ -18,8 +18,9 @@
         ];
 
         extraPackages = with pkgs; [
+          alejandra
+          catppuccin
           nixd
-          nixfmt
           sqruff
         ];
 
@@ -28,11 +29,13 @@
             Nix = {
               formatter = {
                 external = {
-                  command = "nixfmt";
+                  command = "alejandra";
+                  arguments = [ "--quiet" ];
                 };
               };
               language_servers = [ "nixd" ];
             };
+
             SQL = {
               formatter = {
                 language_server = {
