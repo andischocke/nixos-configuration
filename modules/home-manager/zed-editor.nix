@@ -1,6 +1,9 @@
 {
   flake.homeModules.zed-editor =
-    { pkgs, ... }:
+    {
+      pkgs,
+      ...
+    }:
 
     {
       programs.zed-editor = {
@@ -10,21 +13,40 @@
           "csv"
           "log"
           "nix"
+          "sql"
+          "xml"
+          "zig"
         ];
 
         extraPackages = with pkgs; [
           nixd
+          nixfmt
+          sqruff
         ];
 
         userSettings = {
           languages = {
             Nix = {
+              formatter = {
+                external = {
+                  command = "nixfmt";
+                };
+              };
               language_servers = [ "nixd" ];
+            };
+            SQL = {
+              formatter = {
+                language_server = {
+                  name = "sqruff";
+                };
+              };
+              language_servers = [ "sqruff" ];
             };
           };
 
           lsp = {
             nixd = { };
+            sqruff = { };
           };
 
           session = {
