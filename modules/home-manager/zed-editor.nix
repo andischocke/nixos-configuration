@@ -20,7 +20,6 @@
 
         extraPackages = with pkgs; [
           alejandra
-          nil
           nixd
           sqruff
         ];
@@ -57,12 +56,11 @@
                   arguments = [ "--quiet" ];
                 };
               };
-              language_servers = [ "nil" ];
+              language_servers = [ "nixd" ];
             };
           };
 
           lsp = {
-            nil = { };
             nixd = { };
           };
         };
