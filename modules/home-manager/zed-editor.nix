@@ -47,8 +47,6 @@
             dark = "Catppuccin Mocha";
           };
           #Languages & Tools
-
-
           languages = {
             Nix = {
               formatter = {
