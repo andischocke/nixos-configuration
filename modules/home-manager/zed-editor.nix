@@ -15,7 +15,6 @@
           "csv"
           "log"
           "nix"
-          "sql"
           "xml"
         ];
 
@@ -36,20 +35,10 @@
               };
               language_servers = [ "nixd" ];
             };
-
-            SQL = {
-              formatter = {
-                language_server = {
-                  name = "sqruff";
-                };
-              };
-              language_servers = [ "sqruff" ];
-            };
           };
 
           lsp = {
             nixd = { };
-            sqruff = { };
           };
 
           session = {
