@@ -10,6 +10,7 @@
         enable = true;
 
         extensions = [
+          "catppuccin"
           "csv"
           "log"
           "nix"
@@ -19,7 +20,6 @@
 
         extraPackages = with pkgs; [
           alejandra
-          catppuccin
           nixd
           sqruff
         ];
