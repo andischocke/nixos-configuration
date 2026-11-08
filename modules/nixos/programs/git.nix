@@ -23,6 +23,7 @@
           hyperlinks = true;
           hyperlinks-file-link-format = "zed://file/{path}:{line}";
           line-numbers = true;
+          side-by-side = true;
           syntax-theme = "Catppuccin Mocha";
         };
         diff = {
