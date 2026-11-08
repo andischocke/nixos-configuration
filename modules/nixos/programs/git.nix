@@ -5,7 +5,7 @@
 
       config = {
         alias = {
-          skim = ''!git diff --name-only | fzf --preview "git diff -- ':(top){-1}' | delta --width=${FZF_PREVIEW_COLUMNS}" --preview-window="right,75%" --layout=reverse-list || true'';
+          skim = ''!git diff --name-only | fzf --preview "git diff -- ':(top){-1}' | delta --width=''${FZF_PREVIEW_COLUMNS:-80}" --preview-window="right,75%" --layout=reverse-list || true'';
         };
         branch = {
           sort = "-committerdate";
