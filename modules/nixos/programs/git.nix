@@ -15,7 +15,11 @@
           verbose = true;
         };
         core = {
+          pager = "delta";
           whitespace = "fix,space-before-tab,trailing-space";
+        };
+        delta = {
+          
         };
         diff = {
           algorithm = "histogram";

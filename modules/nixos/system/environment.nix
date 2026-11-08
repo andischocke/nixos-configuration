@@ -16,6 +16,7 @@
         };
 
         systemPackages = with pkgs; [
+          delta
           dust
           eza
           fd
