@@ -30,6 +30,7 @@
 
       users.andreas = {
         directories = [
+          # Home directories according to XDG Base Directory Specification
           "Desktop"
           "Documents"
           "Downloads"
@@ -41,6 +42,7 @@
           "Videos"
         ];
         files = [
+          ".local/share/zoxide/db.zo"
         ];
       };
     };

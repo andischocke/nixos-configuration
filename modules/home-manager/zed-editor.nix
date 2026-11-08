@@ -34,7 +34,6 @@
             diagnostics = false;
             metrics = false;
           };
-
           #Appearance
           theme = {
             mode = "system";
