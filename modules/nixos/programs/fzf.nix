@@ -1,7 +1,7 @@
 {
   flake.nixosModules.configuration = {
-    programs.skim = {
-      enable = true;
+    programs.fzf = {
+      fuzzyCompletion = true;
       keybindings = false;
     };
   };

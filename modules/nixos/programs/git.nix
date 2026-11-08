@@ -19,7 +19,7 @@
           whitespace = "fix,space-before-tab,trailing-space";
         };
         delta = {
-          dark = true;
+          detect-dark-light = "always";
           hyperlinks = true;
           hyperlinks-file-link-format = "zed://file/{path}:{line}";
           line-numbers = true;
