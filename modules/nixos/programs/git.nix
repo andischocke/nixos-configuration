@@ -37,13 +37,10 @@
           colorMoved = "zebra";
           mnemonicPrefix = true;
           renames = true;
-          tool = "helix";
+          tool = "zeditor";
         };
         difftool = {
           prompt = false;
-          helix = {
-            cmd = "hx --diff \"$LOCAL\" \"$REMOTE\"";
-          };
           zeditor = {
             cmd = "zeditor --diff \"$LOCAL\" \"$REMOTE\"";
           };
