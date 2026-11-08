@@ -10,7 +10,7 @@
         enable = true;
 
         settings = {
-          theme = "catppuccin-mocha";
+          theme = "catppuccin_mocha";
         };
       };
     };
