@@ -19,9 +19,11 @@
           whitespace = "fix,space-before-tab,trailing-space";
         };
         delta = {
+          dark = true;
           hyperlinks = true;
           hyperlinks-file-link-format = "zed://file/{path}:{line}";
           line-numbers = true;
+          syntax-theme = "Catppuccin Mocha";
         };
         diff = {
           algorithm = "histogram";
