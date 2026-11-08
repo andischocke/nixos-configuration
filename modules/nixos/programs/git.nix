@@ -7,6 +7,10 @@
         branch = {
           sort = "-committerdate";
         };
+        color = {
+          diff = "always";
+          ui = "always";
+        };
         column = {
           ui = "auto";
         };
@@ -27,7 +31,7 @@
         };
         diff = {
           algorithm = "histogram";
-          colorMoved = "plain";
+          colorMoved = "zebra";
           mnemonicPrefix = true;
           renames = true;
         };
