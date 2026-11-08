@@ -37,11 +37,11 @@
           colorMoved = "zebra";
           mnemonicPrefix = true;
           renames = true;
-          tool = "zed";
+          tool = "zeditor";
         };
         difftool = {
-          zed = {
-            cmd = "zed --wait --diff $LOCAL $REMOTE";
+          zeditor = {
+            cmd = "zeditor --wait --diff $LOCAL $REMOTE";
           };
         };
         fetch = {
