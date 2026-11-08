@@ -41,7 +41,7 @@
         };
         difftool = {
           zeditor = {
-            cmd = "zeditor --wait --diff $LOCAL $REMOTE";
+            cmd = "zeditor --wait --diff \"$LOCAL\" \"$REMOTE\"";
           };
         };
         fetch = {
