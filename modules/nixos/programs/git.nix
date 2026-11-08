@@ -37,6 +37,12 @@
           colorMoved = "zebra";
           mnemonicPrefix = true;
           renames = true;
+          tool = "zed";
+        };
+        difftool = {
+          zed = {
+            cmd = "zed --wait --diff $LOCAL $REMOTE";
+          };
         };
         fetch = {
           all = true;
