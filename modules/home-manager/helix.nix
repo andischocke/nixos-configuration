@@ -10,6 +10,10 @@
         enable = true;
 
         settings = {
+          editor = {
+            true-color = true;
+          };
+
           theme = "catppuccin_mocha";
         };
       };
