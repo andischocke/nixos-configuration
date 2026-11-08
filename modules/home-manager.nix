@@ -17,6 +17,7 @@
         useUserPackages = true;
         users.andreas = {
           imports = [
+            self.homeModules.helix
             self.homeModules.home
             self.homeModules.zed-editor
           ];
