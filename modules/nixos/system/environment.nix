@@ -20,6 +20,7 @@
           dust
           eza
           fd
+          fzf
           ripgrep
 
           alacritty
