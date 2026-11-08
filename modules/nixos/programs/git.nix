@@ -40,8 +40,9 @@
           tool = "zeditor";
         };
         difftool = {
+          prompt = false;
           zeditor = {
-            cmd = "zeditor --wait --diff \"$LOCAL\" \"$REMOTE\"";
+            cmd = "zeditor --diff \"$LOCAL\" \"$REMOTE\"";
           };
         };
         fetch = {
