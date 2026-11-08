@@ -4,6 +4,9 @@
       enable = true;
 
       config = {
+        alias = {
+          skim = "!f() { git diff --name-only | fzf --preview \"git diff -- ':(top){-1}' | delta --width=\\${FZF_PREVIEW_COLUMNS}\" --preview-window=\"right,75%\" --layout=reverse-list || true; }; f";
+        };
         branch = {
           sort = "-committerdate";
         };
