@@ -19,7 +19,9 @@
           whitespace = "fix,space-before-tab,trailing-space";
         };
         delta = {
-          
+          hyperlinks = true;
+          hyperlinks-file-link-format = "zed://file/{path}:{line}";
+          line-numbers = true;
         };
         diff = {
           algorithm = "histogram";
