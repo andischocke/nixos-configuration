@@ -36,6 +36,7 @@
         diff = {
           algorithm = "histogram";
           colorMoved = "zebra";
+          guitool = "zeditor";
           mnemonicPrefix = true;
           renames = true;
           tool = "zeditor";
