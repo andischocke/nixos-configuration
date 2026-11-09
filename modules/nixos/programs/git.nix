@@ -22,6 +22,7 @@
           verbose = true;
         };
         core = {
+          editor = "hx";
           pager = "delta";
           whitespace = "fix,space-before-tab,trailing-space";
         };
