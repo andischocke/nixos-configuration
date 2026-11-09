@@ -22,7 +22,7 @@
           verbose = true;
         };
         core = {
-          editor = "hx";
+          editor = "zeditor";
           pager = "delta";
           whitespace = "fix,space-before-tab,trailing-space";
         };
