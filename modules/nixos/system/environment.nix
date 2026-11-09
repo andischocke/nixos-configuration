@@ -20,14 +20,14 @@
         };
 
         systemPackages = with pkgs; [
-          bottom
+          alacritty
           delta
           dust
           eza
           fd
+          mission-center
           ripgrep
-
-          alacritty
+          
           cups-pk-helper
           fuzzel
           github-desktop
