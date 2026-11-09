@@ -25,7 +25,6 @@
           dust
           eza
           fd
-          mission-center
           ripgrep
           
           cups-pk-helper
