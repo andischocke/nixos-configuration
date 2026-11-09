@@ -7,6 +7,10 @@
 
     {
       environment = {
+        sessionVariables = {
+          SKIM_DEFAULT_OPTIONS = "--border=plain --color=catppuccin-mocha --layout=reverse-list --multi";
+        };
+
         shellAliases = {
           cat = "bat";
           du = "dust --depth=2 --reverse";
