@@ -11,7 +11,9 @@
         enableBashIntegration = true;
 
         settings = {
-          theme = "catppuccin";
+          ui = {
+            theme = "catppuccin";
+          };
         };
       };
     };
