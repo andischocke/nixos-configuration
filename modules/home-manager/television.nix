@@ -15,7 +15,7 @@
             preview = { 
               env = { 
                 BAT_THEME = "Catppuccin Mocha";
-              }
+              };
             };
           };
         };
