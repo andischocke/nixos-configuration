@@ -39,9 +39,9 @@
           guitool = "zeditor";
           mnemonicPrefix = true;
           renames = true;
-          tool = "zeditor";
         };
         difftool = {
+          guiDefault = true;
           prompt = false;
           zeditor = {
             cmd = "zeditor --diff \"$LOCAL\" \"$REMOTE\"";
