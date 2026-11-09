@@ -11,6 +11,12 @@
 
         settings = {
           editor = {
+            auto-completion = true;
+            auto-format = true;
+            auto-info = true;
+            auto-pairs = true;
+            line-number = "relative";
+            path-completion = true;
             true-color = true;
           };
 
