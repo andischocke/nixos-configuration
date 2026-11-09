@@ -8,7 +8,7 @@
     {
       environment = {
         sessionVariables = {
-          SKIM_DEFAULT_OPTIONS = "--border=plain --color=catppuccin-mocha --layout=reverse-list --multi";
+          SKIM_DEFAULT_OPTIONS = "--ansi --border=plain --color=catppuccin-mocha --layout=reverse-list --multi";
         };
 
         shellAliases = {
@@ -20,6 +20,7 @@
         };
 
         systemPackages = with pkgs; [
+          bottom
           delta
           dust
           eza
