@@ -39,7 +39,7 @@
             actions = { 
               enter = { 
                 description = "Enter the directory";
-                command = "cd {}";
+                command = "cd {} && \${SHELL}";
                 mode = "execute";
               };
               parent = {
