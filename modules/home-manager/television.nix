@@ -44,7 +44,7 @@
               };
               parent = {
                 description = "Go to the parent directory";
-                command = "cd ..";
+                command = "tv files ..";
                 mode = "execute";
               };
             };
