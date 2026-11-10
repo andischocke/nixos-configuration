@@ -7,6 +7,13 @@
       colors = "always";
       git = true;
       icons = "always";
+
+      extraOptions = [
+        "--group-directories-first"
+        "--header"
+        "--long"
+        "--time-style=long-iso"
+      ];
       
       theme = {
         colourful = true;
