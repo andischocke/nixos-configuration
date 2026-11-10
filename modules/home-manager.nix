@@ -19,7 +19,7 @@
           imports = [
             self.homeModules.helix
             self.homeModules.home
-            #self.homeModules.television
+            self.homeModules.television
             self.homeModules.zed-editor
           ];
         };

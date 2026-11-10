@@ -37,6 +37,5 @@
           VISUAL = "zeditor";
         };
       };
-      programs.television.enable = true;
     };
 }
