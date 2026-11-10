@@ -30,7 +30,7 @@
               ];
             };
             preview = {
-              command = "eza {}";
+              command = "eza --git --group-directories-first --header --icons --long --time-style=long-iso {}";
             };
             keybindings = {
               ctrl-down = "actions:enter";
