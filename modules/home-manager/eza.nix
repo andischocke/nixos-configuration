@@ -6,7 +6,7 @@
       
       colors = "always";
       git = true;
-      icons = true;
+      icons = "always";
 
       extraOptions = [
         "--group-directories-first"
