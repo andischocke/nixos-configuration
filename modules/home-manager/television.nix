@@ -31,9 +31,6 @@
             };
             preview = {
               command = "bat {}";
-              env = {
-                BAT_CONFIG_DIR = "/etc/bat";
-              };
             };
             keybindings = {
               ctrl-down = "actions:edit";
