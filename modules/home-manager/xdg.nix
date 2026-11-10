@@ -1,6 +1,6 @@
 {
   flake.homeModules.default = {
-    programs.xdg = {
+    xdg = {
       enable = true;
     };
   };
