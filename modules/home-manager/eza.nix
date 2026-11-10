@@ -4,13 +4,11 @@
       enable = true;
       enableBashIntegration = true;
 
-      colors = "always";
-      git = true;
-      icons = "always";
-
       extraOptions = [
+        "--git"
         "--group-directories-first"
         "--header"
+        "--icons=always"
         "--long"
         "--time-style=long-iso"
       ];
