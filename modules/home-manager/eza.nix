@@ -10,7 +10,7 @@
         enable = true;
         enableBashIntegration = true;
 
-        color = "always";
+        colors = "always";
         git = true;
         icons = true;
 
