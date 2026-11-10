@@ -11,6 +11,45 @@
         enableBashIntegration = true;
 
         channels = {
+          dirs = {
+            metadata = {
+              name = "dirs";
+              description = " A channel to select directories";
+              requirements = [ "eza" "fd" ];
+            };
+            source = {
+              command = [
+                {
+                  name = "Default";
+                  run = "fd --type d";
+                }
+                { 
+                  name = "Hidden";
+                  run = "fd --type d --hidden";
+                }
+              ];
+            };
+            preview = {
+              command = "eza {}";
+            };
+            keybindings = {
+              ctrl-down = "actions:enter";
+              ctrl-up = "actions:parent";
+            };
+            actions = { 
+              enter = { 
+                description = "Enter the directory";
+                command = "tv dirs {}";
+                mode = "execute";
+              };
+              parent = {
+                description = "Go to the parent directory";
+                command = "tv dirs ..";
+                mode = "execute";
+              };
+            };
+          };
+
           files = {
             metadata = {
               name = "files";
