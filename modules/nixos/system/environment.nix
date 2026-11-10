@@ -31,6 +31,7 @@
           fuzzel
           github-desktop
         ];
+        programs.television.enable = true;
       };
     };
 }
