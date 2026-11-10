@@ -31,7 +31,7 @@
             };
             preview = {
               command = "bat {}";
-              env {
+              env = {
                 BAT_CONFIG_DIR = "/etc/bat";
               };
             };
