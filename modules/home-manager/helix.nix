@@ -9,6 +9,7 @@
       programs.helix = {
         enable = true;
 
+        defaultEditor = true;
         settings = {
           editor = {
             auto-completion = true;
