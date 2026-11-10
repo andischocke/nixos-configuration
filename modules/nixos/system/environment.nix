@@ -15,7 +15,7 @@
           cat = "bat";
           du = "dust --depth=2 --reverse";
           find = "fd --hidden --no-ignore";
-          grep = "rg --hidden --no-ignore --pretty --search-zip --smart-case";
+          #grep = "rg";
           ls = "eza --color=always --git --group-directories-first --header --icons --long --time-style=long-iso";
         };
 
@@ -25,7 +25,6 @@
           dust
           eza
           fd
-          ripgrep
           
           cups-pk-helper
           fuzzel

@@ -19,6 +19,7 @@
           imports = [
             self.homeModules.helix
             self.homeModules.home
+            self.homeModules.ripgrep
             self.homeModules.television
             self.homeModules.zed-editor
           ];
