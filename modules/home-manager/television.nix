@@ -39,7 +39,7 @@
             actions = { 
               enter = { 
                 description = "Enter the directory";
-                command = "tv dirs {}";
+                command = "cd {}";
                 mode = "execute";
               };
               parent = {
