@@ -31,6 +31,11 @@
           fuzzel
           github-desktop
         ];
+
+        variables = {
+          EDITOR = "hx";
+          VISUAL = "zeditor";
+        };
       };
       programs.television.enable = true;
     };
