@@ -21,11 +21,10 @@
         settings = {
           color = "always";
           decorations = "always";
-          #italic-text = "always";
           pager = "less";
           paging = "auto";
           style = "full";
-          theme = "auto";
+          theme = "dark";
           theme-dark = "Catppuccin Mocha";
           theme-light = "Catppuccin Latte";
           wrap = "auto";
