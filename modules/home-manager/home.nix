@@ -1,8 +1,14 @@
 {
   flake.homeModules.home = {
-    home.username = "andreas";
-    home.homeDirectory = "/home/andreas";
-    home.stateVersion = "26.05";
+    home = {
+      homeDirectory = "/home/andreas";
+      stateVersion = "26.05";
+      username = "andreas";
+
+      sessionVariables = {
+        RIPGREP_CONFIG_PATH = "\${HOME}/.config/ripgrep/ripgreprc";
+      };
+    };
     programs.home-manager.enable = true;
   };
 }
