@@ -23,7 +23,6 @@
           alacritty
           delta
           dust
-          eza
           fd
           ripgrep
           
