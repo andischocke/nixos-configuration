@@ -21,7 +21,7 @@
         settings = {
           color = "always";
           decorations = "always";
-          italic-text = "always";
+          #italic-text = "always";
           pager = "less";
           paging = "auto";
           style = "full";
