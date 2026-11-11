@@ -30,15 +30,13 @@
       ];
 
       users = {
-        defaultUserShell = pkgs.nushell;
         mutableUsers = false;
         
         users.andreas = {
           description = "Andreas Henneberger";
           hashedPassword = "$y$j9T$O1jkC4bqmVIVy9.2Y947T.$EELekbygdNm4s8Yyyzv9MgrTQlwqqrtSBnSkWGAK1X2";
           isNormalUser = true;
-
-          useDefaultShell = true;
+          
           extraGroups = [
             "networkmanager"
             "wheel"
