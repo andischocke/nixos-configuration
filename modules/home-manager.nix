@@ -22,6 +22,7 @@
             self.homeModules.ripgrep
             self.homeModules.television
             self.homeModules.zed-editor
+            self.homeModules.zellij
           ];
         };
       };
