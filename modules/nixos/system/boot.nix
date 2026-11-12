@@ -36,7 +36,7 @@
             consoleMode = "max";
             editor = false;
           };
-          timeout = 4;
+          timeout = 0;
         };
 
         # Plymouth
