@@ -15,8 +15,8 @@
           cat = "bat";
           du = "dust --depth=2 --reverse";
           find = "fd --hidden --no-ignore";
-          grep = "rg";
-          #ls = "eza --color=always --git --group-directories-first --header --icons --long --time-style=long-iso";
+          grep = "rg --hidden --no-ignore --pretty --search-zip --smart-case";
+          ls = "eza --git --group-directories-first --header --icons=always --long --time-style=long-iso";
         };
 
         systemPackages = with pkgs; [
@@ -25,7 +25,7 @@
           eza
           fd
           herdr-desktop
-          #ripgrep
+          ripgrep
           
           cups-pk-helper
           github-desktop
