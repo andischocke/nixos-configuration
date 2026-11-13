@@ -17,15 +17,12 @@
         };
 
         systemPackages = with pkgs; [
+          alacritty
           delta
           dust
           eza
           fd
-          herdr-desktop
           ripgrep
-          
-          cups-pk-helper
-          github-desktop
         ];
 
         variables = {

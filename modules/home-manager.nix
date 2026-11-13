@@ -18,6 +18,7 @@
         users.andreas = {
           imports = [
             self.homeModules.helix
+            self.homeModules.herdr
             self.homeModules.home
             self.homeModules.television
             self.homeModules.zed-editor

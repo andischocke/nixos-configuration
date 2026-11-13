@@ -37,13 +37,13 @@
           #Appearance
           theme = {
             mode = "system";
-            light = "Catppuccin Latte";
             dark = "Catppuccin Mocha";
+            light = "Catppuccin Latte";
           };
           icon_theme = {
             mode = "system";
-            light = "Catppuccin Latte";
             dark = "Catppuccin Mocha";
+            light = "Catppuccin Latte";
           };
           #Languages & Tools
           languages = {
