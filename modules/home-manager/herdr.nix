@@ -8,7 +8,6 @@
       settings = {
         onboarding = false;
         terminal = {
-          default_shell = "\${SHELL}";
           new_cwd = "follow";
           shell_mode = "auto";
         };
