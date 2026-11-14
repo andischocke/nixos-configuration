@@ -32,10 +32,6 @@
             };
           };
         };
-
-        facter = {
-          enable = true;
-        };
         
         graphics = {
           enable = true;
