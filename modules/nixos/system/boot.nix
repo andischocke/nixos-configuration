@@ -10,7 +10,7 @@
         kernelPackages = pkgs.linuxPackages_latest;
         kernelModules = [
           "kvm-amd"
-          # "ntsync"
+          "ntsync"
         ];
 
         # Initial RAM Disk
