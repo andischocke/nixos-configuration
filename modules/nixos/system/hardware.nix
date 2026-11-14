@@ -32,6 +32,11 @@
             };
           };
         };
+
+        facter = {
+          enable = true;
+          reportPath = /etc/nixos/facter.json;
+        };
         
         graphics = {
           enable = true;
