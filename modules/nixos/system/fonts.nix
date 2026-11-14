@@ -19,6 +19,7 @@
         };
 
         packages = with pkgs; [
+          font-awesome
           noto-fonts
           noto-fonts-color-emoji
           nerd-fonts.adwaita-mono
