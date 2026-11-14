@@ -31,6 +31,7 @@
       users.andreas = {
         directories = [
           ".local/share/keyrings"
+          ".local/share/Steam"
           ".local/share/zoxide"
           # Home directories according to XDG Base Directory Specification
           "Desktop"
