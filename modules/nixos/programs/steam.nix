@@ -9,7 +9,7 @@
       programs.steam = {
         enable = true;
 
-        extraCompatPackages = with pkgs.steam; [
+        extraCompatPackages = with pkgs; [
           proton-ge-bin
         ];
       };
