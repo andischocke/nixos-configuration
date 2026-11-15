@@ -17,6 +17,7 @@
         useUserPackages = true;
         users.andreas = {
           imports = [
+            self.homeModules.concord
             self.homeModules.helix
             self.homeModules.herdr
             self.homeModules.home
