@@ -17,11 +17,11 @@
         };
 
         systemPackages = with pkgs; [
-          alacritty
           delta
           dust
           eza
           fd
+          ghostty
           ripgrep
         ];
 
