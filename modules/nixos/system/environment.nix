@@ -21,7 +21,6 @@
           dust
           eza
           fd
-          ghostty
           ripgrep
         ];
 
