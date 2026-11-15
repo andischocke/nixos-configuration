@@ -1,5 +1,5 @@
 {
-  flake.nixosModules.configuration = {
+  flake.nixosModules.test = {
     programs.starship = {
       enable = true;
       enableNushellIntegration = true;

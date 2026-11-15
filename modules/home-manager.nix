@@ -24,6 +24,7 @@
             self.homeModules.home
             self.homeModules.nushell
             self.homeModules.television
+            self.homeModules.terminal
             self.homeModules.zed-editor
           ];
         };
