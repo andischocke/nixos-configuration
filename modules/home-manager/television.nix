@@ -8,7 +8,7 @@
     {
       programs.television = {
         enable = true;
-        enableBashIntegration = true;
+        enableNushellIntegration = true;
 
         channels = {
           dirs = {
@@ -89,6 +89,11 @@
             };
           };
         };
+
+        extraPackages = with pkgs; [
+          eza
+          fd
+        ];
         
 
         settings = {
