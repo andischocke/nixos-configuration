@@ -1,5 +1,5 @@
 {
-  flake.homeModules.nushell =
+  flake.homeModules.terminal =
     {
       pkgs,
       ...

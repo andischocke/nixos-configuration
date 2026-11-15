@@ -11,7 +11,7 @@
         enableNushellIntegration = true;
 
         extraPackages = with pkgs; [
-
+          
         ];
         
         presets = [

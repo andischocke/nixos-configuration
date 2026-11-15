@@ -18,11 +18,9 @@
         users.andreas = {
           imports = [
             self.homeModules.concord
-            self.homeModules.ghostty
             self.homeModules.helix
             self.homeModules.herdr
             self.homeModules.home
-            self.homeModules.nushell
             self.homeModules.television
             self.homeModules.terminal
             self.homeModules.zed-editor

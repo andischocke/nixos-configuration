@@ -1,5 +1,5 @@
 {
-  flake.homeModules.ghostty =
+  flake.homeModules.terminal =
     { pkgs, ... }:
 
     {
