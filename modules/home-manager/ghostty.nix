@@ -4,7 +4,7 @@
       enable = true;
 
       settings = {
-        theme = "catppuccin-mocha";
+        # theme = "noctalia";
       };
     };
   };
