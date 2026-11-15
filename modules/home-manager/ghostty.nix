@@ -1,11 +1,15 @@
 {
-  flake.homeModules.ghostty = {
-    programs.ghostty = {
-      enable = true;
+  flake.homeModules.ghostty =
+    { pkgs, ... }:
 
-      settings = {
-        # theme = "noctalia";
+    {
+      programs.ghostty = {
+        enable = true;
+
+        settings = {
+          command = "\${pkgs.nushell}/bin/nu";
+          # theme = "noctalia";
+        };
       };
     };
-  };
 }
