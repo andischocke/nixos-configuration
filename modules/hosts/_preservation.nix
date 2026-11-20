@@ -30,6 +30,7 @@
 
       users.andreas = {
         directories = [
+          ".config/BraveSoftware"
           ".local/share/keyrings"
           ".local/share/Steam"
           ".local/share/zoxide"
