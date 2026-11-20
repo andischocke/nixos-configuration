@@ -17,6 +17,7 @@
 
         policies = {
           # Startup, Home page and New Tab page
+          DefaultBrowserSettingEnabled = false;
           HomepageIsNewTabPage = true;
           RestoreOnStartup = 1;
           ShowHomeButton = true;
