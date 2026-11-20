@@ -21,10 +21,17 @@
           MemorySaverModeSavings = 2;
           MetricsReportingEnabled = false;
 
+          # Languages
           ForcedLanguages = [
             "en-US"
             "de-DE"
           ];
+          SpellcheckEnabled = true;
+          SpellcheckLanguages = [
+            "en-US"
+            "de-DE"
+          ];
+          TranslateEnabled = true;
 
           # Startup, Home page and New Tab page
           ShowHomeButton = true;
