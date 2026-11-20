@@ -31,6 +31,7 @@
           ];
           DefaultImagesSetting = 1;
           DefaultJavaScriptSetting = 1;
+          DefaultJavaScriptOptimizerSetting = 1;
           DefaultNotificationsSetting = 2;
           DefaultPopupsSetting = 2;
 
@@ -47,6 +48,7 @@
           TranslateEnabled = true;
 
           # System
+          BackgroundModeEnabled = false;
           DiskCacheSize = 30 * 1024 * 1024;
           HighEfficiencyModeEnabled = true;
           MemorySaverModeSavings = 2;
