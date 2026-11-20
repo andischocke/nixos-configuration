@@ -21,9 +21,15 @@
           MemorySaverModeSavings = 2;
           MetricsReportingEnabled = false;
 
+          ForcedLanguages = [
+            "en-US"
+            "de-DE"
+          ];
+
           # Startup, Home page and New Tab page
           ShowHomeButton = true;
           HomepageIsNewTabPage = true;
+          RestoreOnStartup = 1;
         };
       };
     };
