@@ -27,7 +27,7 @@
             "de-DE"
           ];
           SpellcheckEnabled = true;
-          SpellcheckLanguages = [
+          SpellcheckLanguage = [
             "en-US"
             "de-DE"
           ];
