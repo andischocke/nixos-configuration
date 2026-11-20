@@ -18,17 +18,21 @@
         policies = {
           # Startup, Home page and New Tab page
           HomepageIsNewTabPage = true;
-          NewTabPageLocation = "chrome://newtab";
           RestoreOnStartup = 1;
           ShowHomeButton = true;
 
           # Privacy and security
           MetricsReportingEnabled = false;
 
+          # Site settings
           DefaultGeolocationSetting = 2;
           PreciseGeolocationAllowedForUrls = [
             "https://www.google.com"
           ];
+          DefaultImagesSetting = 1;
+          DefaultJavaScriptSetting = 1;
+          DefaultNotificationsSetting = 2;
+          DefaultPopupsSetting = 2;
 
           # Languages
           ForcedLanguages = [
