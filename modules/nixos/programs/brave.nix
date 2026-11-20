@@ -24,7 +24,7 @@
           # Startup, Home page and New Tab page
           ShowHomeButton = true;
           HomepageIsNewTabPage = true;
-          RestoreOnStartup = 4;
+          RestoreOnStartup = 1;
         };
       };
     };
