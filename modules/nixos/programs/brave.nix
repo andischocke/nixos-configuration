@@ -16,10 +16,15 @@
         ];
 
         policies = {
-          DiskCacheSize = 31457280;
+          DiskCacheSize = 30 * 1024 * 1024;
           HighEfficiencyModeEnabled = true;
           MemorySaverModeSavings = 2;
           MetricsReportingEnabled = false;
+
+          # Startup, Home page and New Tab page
+          ShowHomeButton = true;
+          HomepageIsNewTabPage = true;
+          RestoreOnStartup = 4;
         };
       };
     };
