@@ -17,12 +17,15 @@
 
         policies = {
           # Startup, Home page and New Tab page
-          ShowHomeButton = true;
           HomepageIsNewTabPage = true;
+          NewTabPageLocation = "chrome://newtab";
           RestoreOnStartup = 1;
+          ShowHomeButton = true;
 
           # Privacy and security
           MetricsReportingEnabled = false;
+
+          DefaultGeolocationSetting = 2;
           PreciseGeolocationAllowedForUrls = [
             "https://www.google.com"
           ];
