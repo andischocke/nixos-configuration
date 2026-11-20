@@ -35,6 +35,18 @@
           DefaultNotificationsSetting = 2;
           DefaultPopupsSetting = 2;
 
+          # Autofill and passwords
+          AutofillSettings = [
+            {
+              url_pattern = "*";
+              blocked_types = [
+                "contact_info"
+                "payments"
+              ];
+            }
+          ];
+          PasswordManagerEnabled = false;
+
           # Languages
           ForcedLanguages = [
             "en-US"
