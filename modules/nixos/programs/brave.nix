@@ -16,10 +16,16 @@
         ];
 
         policies = {
-          DiskCacheSize = 30 * 1024 * 1024;
-          HighEfficiencyModeEnabled = true;
-          MemorySaverModeSavings = 2;
+          # Startup, Home page and New Tab page
+          ShowHomeButton = true;
+          HomepageIsNewTabPage = true;
+          RestoreOnStartup = 1;
+
+          # Privacy and security
           MetricsReportingEnabled = false;
+          PreciseGeolocationAllowedForUrls = [
+            "https://www.google.com"
+          ];
 
           # Languages
           ForcedLanguages = [
@@ -33,10 +39,10 @@
           ];
           TranslateEnabled = true;
 
-          # Startup, Home page and New Tab page
-          ShowHomeButton = true;
-          HomepageIsNewTabPage = true;
-          RestoreOnStartup = 1;
+          # System
+          DiskCacheSize = 30 * 1024 * 1024;
+          HighEfficiencyModeEnabled = true;
+          MemorySaverModeSavings = 2;
         };
       };
     };
