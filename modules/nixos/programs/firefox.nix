@@ -132,6 +132,10 @@
         "browser.tabs.loadInBackground" = true;
         "browser.tabs.warnOnClose" = false;
         "browser.warnOnQuitShortcut" = false;
+        
+        "browser.cache.disk.smart_size.enabled" = false;
+        "browser.cache.disk.capacity" = 30720;
+        "browser.tabs.unloadOnLowMemory" = true;
       };
 
       preferencesStatus = "locked";

@@ -17,6 +17,8 @@
 
         policies = {
           DiskCacheSize = 31457280;
+          HighEfficiencyModeEnabled = true;
+          MemorySaverModeSavings = 2;
           MetricsReportingEnabled = false;
         };
       };
