@@ -25,17 +25,6 @@
           BlockThirdPartyCookies = true;
           MetricsReportingEnabled = false;
 
-          # Site settings
-          DefaultGeolocationSetting = 2;
-          PreciseGeolocationAllowedForUrls = [
-            "https://www.google.com"
-          ];
-          DefaultImagesSetting = 1;
-          DefaultJavaScriptSetting = 1;
-          DefaultJavaScriptOptimizerSetting = 1;
-          DefaultNotificationsSetting = 2;
-          DefaultPopupsSetting = 2;
-
           # Languages
           ForcedLanguages = [
             "en-US"
