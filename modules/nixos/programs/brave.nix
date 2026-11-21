@@ -17,12 +17,12 @@
 
         policies = {
           # Startup, Home page and New Tab page
-          DefaultBrowserSettingEnabled = false;
           HomepageIsNewTabPage = true;
           RestoreOnStartup = 1;
           ShowHomeButton = true;
 
           # Privacy and security
+          BlockThirdPartyCookies = true;
           MetricsReportingEnabled = false;
 
           # Site settings
