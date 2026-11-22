@@ -32,7 +32,7 @@
           };
           systemd-boot = {
             enable = true;
-            configurationLimit = 8;
+            configurationLimit = 20;
             consoleMode = "max";
             editor = false;
           };
