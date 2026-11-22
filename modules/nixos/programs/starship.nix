@@ -7,6 +7,12 @@
       presets = [
         "catppuccin-powerline"
       ];
+
+      settings = {
+        directory = {
+          truncation_length = 0;
+        };
+      };
     };
   };
 }
