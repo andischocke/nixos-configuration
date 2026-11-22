@@ -30,7 +30,7 @@
         $env.config.show_banner = false
         
         source ${
-          pkgs.runCommand "zoxide-nushell-config.nu" { } ''
+          pkgs.runCommandLocal "zoxide.nu" { } ''
             ${lib.getExe config.programs.zoxide.package} init nushell ${lib.escapeShellArgs config.programs.zoxide.flags} > "$out"
           ''
         }
