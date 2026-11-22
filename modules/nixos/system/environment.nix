@@ -7,13 +7,13 @@
 
     {
       environment = {
-        shells = with pkgs; [
-          nushell
-        ];
-
         shellAliases = {
           grep = "rg --hidden --no-ignore --pretty --search-zip --smart-case";
         };
+        
+        shells = with pkgs; [
+          nushell
+        ];
 
         systemPackages = with pkgs; [
           delta
