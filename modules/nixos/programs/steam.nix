@@ -15,6 +15,7 @@
         };
 
         extraCompatPackages = with pkgs; [
+          proton-cachyos-bin
           proton-ge-bin
         ];
       };
