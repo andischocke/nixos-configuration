@@ -1,10 +1,9 @@
 {
-  flake.homeModules.terminal = {
+  flake.nixosModules.configuration = {
     programs.zoxide = {
       enable = true;
-      enableNushellIntegration = true;
       
-      options = [
+      flags = [
         "--cmd cd"
       ];
     };

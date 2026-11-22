@@ -1,8 +1,23 @@
 {
-  flake.nixosModules.configuration = {
+  flake.nixosModules.configuration = 
+    {
+      config,
+      lib,
+      pkgs,
+      ...
+    }:
+    
+    {
     programs.nushell = {
       enable = true;
 
+      autoloads = [
+        (pkgs.runCommand "zoxide.nu" { } ''
+          ${lib.getExe config.programs.zoxide.package} init nushell ${lib.escapeShellArgs config.programs.zoxide.flags} > "$out"
+        '')
+      ];
+
+      # $env.config.buffer_editor = ["hx", "{file}:{line}:{col}"]
       interactiveShellInit = ''
         $env.config.buffer_editor = "hx"
 
@@ -20,6 +35,10 @@
 
         $env.config.show_banner = false
       '';
+
+      plugins = with pkgs.nushellPlugins; [
+
+      ];
     };
   };
 }
