@@ -39,6 +39,7 @@
           isNormalUser = true;
           useDefaultShell = true;
           extraGroups = [
+            "gamemode"
             "networkmanager"
             "wheel"
           ];
