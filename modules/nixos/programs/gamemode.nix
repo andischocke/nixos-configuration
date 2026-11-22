@@ -11,7 +11,7 @@
         enableRenice = true;
 
         settings = {
-          renicePriority = 10;
+          
         };
       };
     };
