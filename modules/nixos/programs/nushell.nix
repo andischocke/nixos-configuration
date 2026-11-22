@@ -11,12 +11,6 @@
     programs.nushell = {
       enable = true;
 
-      autoloads = [
-        (pkgs.runCommand "zoxide.nu" { } ''
-          ${lib.getExe config.programs.zoxide.package} init nushell ${lib.escapeShellArgs config.programs.zoxide.flags} > "$out"
-        '')
-      ];
-
       # $env.config.buffer_editor = ["hx", "{file}:{line}:{col}"]
       interactiveShellInit = ''
         $env.config.buffer_editor = "hx"
@@ -34,6 +28,12 @@
         }
 
         $env.config.show_banner = false
+        
+        source ${
+          pkgs.runCommand "zoxide-nushell-config.nu" { } ''
+            ${lib.getExe config.programs.zoxide.package} init nushell ${lib.escapeShellArgs config.programs.zoxide.flags} > "$out"
+          ''
+        }
       '';
 
       plugins = with pkgs.nushellPlugins; [
