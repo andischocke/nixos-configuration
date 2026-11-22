@@ -4,7 +4,7 @@
       enable = true;
 
       interactiveShellInit = ''
-        $env.config.buffer_editor = ["hx", "{file}:{line}:{col}"]
+        $env.config.buffer_editor = "hx"
 
         $env.config.completions = {
           algorithm: "fuzzy"
@@ -17,7 +17,7 @@
           ignore_space_prefixed: false
           isolation: true
         }
-        
+
         $env.config.show_banner = false
       '';
     };
