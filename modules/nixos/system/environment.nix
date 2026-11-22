@@ -7,6 +7,10 @@
 
     {
       environment = {
+        sessionVariables = {
+          GAMEMODERUN = "1";
+        };
+
         shellAliases = {
           grep = "rg --hidden --no-ignore --pretty --search-zip --smart-case";
         };
