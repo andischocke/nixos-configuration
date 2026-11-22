@@ -4,7 +4,7 @@
       enable = true;
       
       flags = [
-        "--cmd cd"
+        "--cmd=cd"
       ];
     };
   };
